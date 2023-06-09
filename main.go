@@ -1,7 +1,7 @@
 package main
 
 import (
-	"TCP-server-http/param"
+	"TCP-server-http/request"
 	"bufio"
 	"fmt"
 	"log"
@@ -43,7 +43,7 @@ func read(conn net.Conn) {
 		txt := sc.Text()
 
 		if ln == requestLn {
-			p := param.New(txt)
+			p := request.New(txt)
 			log.Printf("[%s] %s", p.URI, p.Method)
 		}
 
