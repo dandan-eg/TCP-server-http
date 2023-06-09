@@ -1,18 +1,18 @@
-package param
+package request
 
 import "strings"
 
-type Param struct {
+type Request struct {
 	Method string
 	URI    string
 }
 
-func New(req string) Param {
+func New(reqLn string) Request {
 
-	fs := strings.Fields(req)
+	fs := strings.Fields(reqLn)
 	//example req = "GET /home HTTP/1.1" -> ["GET", "/home", "HTTP/1.1"]
 
-	return Param{
+	return Request{
 		Method: fs[0],
 		URI:    fs[1],
 	}
