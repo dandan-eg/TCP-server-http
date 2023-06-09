@@ -12,7 +12,7 @@ Throughout this project, I will explore various aspects of TCP, such as establis
 
 To use this server, follow the steps below:
 
-1. Clone the repository: `git clone https://github.com/your-username/TCP-server-http.git`
+1. Clone the repository: `git clone https://github.com/dandan-eg/TCP-server-http.git`
 2. Navigate to the project directory: `cd TCP-server-http`
 3. Build the project: `go build`
 4. Run the executable: `./TCP-server-http`
