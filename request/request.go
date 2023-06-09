@@ -7,6 +7,8 @@ type Request struct {
 	URI    string
 }
 
+// New creates a new instance of the Request structure from a request line.
+
 func New(reqLn string) Request {
 
 	fs := strings.Fields(reqLn)
