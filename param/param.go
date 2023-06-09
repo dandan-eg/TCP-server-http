@@ -8,9 +8,9 @@ type Param struct {
 }
 
 func New(req string) Param {
-	//example req "GET /home HTTP/1.1"
 
 	fs := strings.Fields(req)
+	//example req = "GET /home HTTP/1.1" -> ["GET", "/home", "HTTP/1.1"]
 
 	return Param{
 		Method: fs[0],
