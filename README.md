@@ -31,7 +31,7 @@ To use this server, follow the steps below:
    ```
 4. Run the executable:
    ```shell
-   ./TCP-server-http`
+   ./TCP-server-http
    ```
 
 The server will start listening on port 8080. You can access it by opening a web browser and
