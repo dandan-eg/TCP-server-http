@@ -16,19 +16,20 @@ into the basics of the HTTP protocol, including parsing HTTP requests and constr
 
 To use this server, follow the steps below:
 
-1. Clone the repository: 
+
+1. Clone the repository:
    ```shell
    git clone https://github.com/dandan-eg/TCP-server-http.git
    ```
-2. Navigate to the project directory: 
+2. Navigate to the project directory:
    ```shell
    cd TCP-server-http
    ```
-3. Build the project: 
+3. Build the project:
    ```shell
    go build
    ```
-4. Run the executable: 
+4. Run the executable:
    ```shell
    ./TCP-server-http`
    ```
@@ -64,6 +65,7 @@ functionality:
 
 The `handle` function is responsible for handling an individual connection. Here's an overview of its functionality:
 
+
 1. It defers the closure of the connection using `conn.Close()` to ensure the connection is closed when the function
    returns.
 2. It calls the `read` function to read the incoming request from the client.
@@ -76,7 +78,10 @@ The `read` function reads the incoming request from the client. Here's an overvi
 1. It uses a scanner (`bufio.Scanner`) to read the request line by line.
 2. It checks if the line number is equal to `requestLn` (which is currently set to 0). If so, it creates a `param`
    object using the line and logs the URI and method of the request.
-3. If an empty line is encountered, it breaks the loop and stops reading further.
+3. It checks if the line number is equal to `requestLn` (which is currently set to 0). If so, it creates a `param`
+   object using the line and logs the URI and method of the request.
+
+
 
 ### `write` Function
 
